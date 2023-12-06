@@ -60,14 +60,13 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     width: 350px;
-    border: 1px solid #ccc;
     padding: 10px;
     
 }
 
 .inner-frame {
     flex: 1 0 0;
-    border: 1px solid #000;
+    border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.911);
     padding: 10px;
     width: 250px;
@@ -75,7 +74,12 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     align-items: centre;
     margin-bottom: 20px;
     margin: 10px;
+    text-align: center;
     
+}
+.display-user{
+    background-color: yellow;
+    color: black;
 }
 
 
