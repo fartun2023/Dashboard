@@ -19,13 +19,14 @@ border-radius: 8px;
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .frame1{
-    width: 500%;
+    width: 200%;
     height: 90px;
     background-color: #007bff;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-right: 20px;
+    margin-bottom: 150px;
+    padding-right: 60px;
     
 }
 .frame.text{
@@ -33,6 +34,7 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: right;
 }
 .white-italic{
+    white-space: nowrap;
     color: #fff;
     font-style: italic;
     margin-bottom: 0;
@@ -40,18 +42,18 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .frame1 .text p {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 .frame2{
-  width: 500%; 
-  height: 200px; 
+  width: 200%; 
+  height: 150px; 
   background-color: #0a06061f;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 60px;
+  margin-top: 150px;
   }
 
 .inner-grid{
@@ -76,7 +78,29 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
     text-align: center;
     
-}
+}@media screen and (max-width: 780px) {
+    .dashboard {
+      grid-template-columns: 1fr; 
+      margin: 10px;
+    }
+    .frame1,
+    .frame2 {
+      width: 100%; 
+    }
+    .inner-grid {
+      grid-template-columns: repeat(2, 1fr); 
+      width: 100%;
+    }
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    .inner-grid {
+      grid-template-columns: 1fr; 
+    }
+    
+  }
+
 .display-user{
     background-color: yellow;
     color: black;
